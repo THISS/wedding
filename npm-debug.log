@@ -1,0 +1,224 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/bin/npm', 'install', '-g', 'generator-angular' ]
+2 info using npm@2.7.4
+3 info using node@v0.10.38
+4 verbose node symlink /usr/bin/node
+5 silly cache add args [ 'generator-angular', null ]
+6 verbose cache add spec generator-angular
+7 silly cache add parsed spec { raw: 'generator-angular',
+7 silly cache add   scope: null,
+7 silly cache add   name: 'generator-angular',
+7 silly cache add   rawSpec: '',
+7 silly cache add   spec: '*',
+7 silly cache add   type: 'range' }
+8 verbose addNamed generator-angular@*
+9 silly addNamed semver.valid null
+10 silly addNamed semver.validRange *
+11 silly addNameRange { name: 'generator-angular', range: '*', hasData: false }
+12 silly mapToRegistry name generator-angular
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/generator-angular
+16 verbose addNameRange registry:https://registry.npmjs.org/generator-angular not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/generator-angular
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 22:20:00
+20 verbose request id b0aaf798662b4cb3
+21 http request GET https://registry.npmjs.org/generator-angular
+22 http 200 https://registry.npmjs.org/generator-angular
+23 silly get cb [ 200,
+23 silly get   { date: 'Fri, 24 Apr 2015 22:20:00 GMT',
+23 silly get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+23 silly get     etag: '"5V15HRBQ1M2XZALZNSA6115MI"',
+23 silly get     'content-type': 'application/json',
+23 silly get     'cache-control': 'max-age=60',
+23 silly get     'content-length': '63119',
+23 silly get     'accept-ranges': 'bytes',
+23 silly get     via: '1.1 varnish',
+23 silly get     age: '35',
+23 silly get     'x-served-by': 'cache-sjc3127-SJC',
+23 silly get     'x-cache': 'HIT',
+23 silly get     'x-cache-hits': '1',
+23 silly get     'x-timer': 'S1429914000.412553,VS0,VE0',
+23 silly get     vary: 'Accept',
+23 silly get     'keep-alive': 'timeout=10, max=50',
+23 silly get     connection: 'Keep-Alive' } ]
+24 verbose get saving generator-angular to /home/yeoman/.npm/registry.npmjs.org/generator-angular/.cache.json
+25 verbose getCacheStat cache creation not in flight; initializing
+26 silly addNameRange number 2 { name: 'generator-angular', range: '*', hasData: true }
+27 silly addNameRange versions [ 'generator-angular',
+27 silly addNameRange   [ '0.1.0',
+27 silly addNameRange     '0.1.1',
+27 silly addNameRange     '0.1.2',
+27 silly addNameRange     '0.1.3',
+27 silly addNameRange     '0.1.4',
+27 silly addNameRange     '0.1.5',
+27 silly addNameRange     '0.2.0',
+27 silly addNameRange     '0.2.1',
+27 silly addNameRange     '0.2.2',
+27 silly addNameRange     '0.3.0',
+27 silly addNameRange     '0.3.1',
+27 silly addNameRange     '0.4.0',
+27 silly addNameRange     '0.5.0',
+27 silly addNameRange     '0.5.1',
+27 silly addNameRange     '0.6.0-rc.1',
+27 silly addNameRange     '0.6.0-rc.2',
+27 silly addNameRange     '0.6.0',
+27 silly addNameRange     '0.7.0',
+27 silly addNameRange     '0.7.1',
+27 silly addNameRange     '0.8.0',
+27 silly addNameRange     '0.9.0-0',
+27 silly addNameRange     '0.9.0-1',
+27 silly addNameRange     '0.9.0',
+27 silly addNameRange     '0.9.1',
+27 silly addNameRange     '0.9.2',
+27 silly addNameRange     '0.9.3',
+27 silly addNameRange     '0.9.5',
+27 silly addNameRange     '0.9.6',
+27 silly addNameRange     '0.9.7',
+27 silly addNameRange     '0.9.8',
+27 silly addNameRange     '0.10.0',
+27 silly addNameRange     '0.11.0',
+27 silly addNameRange     '0.11.1' ] ]
+28 verbose addNamed generator-angular@0.11.1
+29 silly addNamed semver.valid 0.11.1
+30 silly addNamed semver.validRange 0.11.1
+31 silly mapToRegistry name generator-angular
+32 silly mapToRegistry using default registry
+33 silly mapToRegistry registry https://registry.npmjs.org/
+34 silly mapToRegistry uri https://registry.npmjs.org/generator-angular
+35 verbose addRemoteTarball https://registry.npmjs.org/generator-angular/-/generator-angular-0.11.1.tgz not in flight; adding
+36 verbose addRemoteTarball [ 'https://registry.npmjs.org/generator-angular/-/generator-angular-0.11.1.tgz',
+36 verbose addRemoteTarball   'f469e28e4ce67639a47c690ba5e54f90558d8e8f' ]
+37 info retry fetch attempt 1 at 22:20:00
+38 info attempt registry request try #1 at 22:20:00
+39 http fetch GET https://registry.npmjs.org/generator-angular/-/generator-angular-0.11.1.tgz
+40 http fetch 200 https://registry.npmjs.org/generator-angular/-/generator-angular-0.11.1.tgz
+41 silly fetchAndShaCheck shasum f469e28e4ce67639a47c690ba5e54f90558d8e8f
+42 verbose addTmpTarball /tmp/npm-31-992d19b3/registry.npmjs.org/generator-angular/-/generator-angular-0.11.1.tgz not in flight; adding
+43 verbose addTmpTarball already have metadata; skipping unpack for generator-angular@0.11.1
+44 silly cache afterAdd generator-angular@0.11.1
+45 verbose afterAdd /home/yeoman/.npm/generator-angular/0.11.1/package/package.json not in flight; writing
+46 verbose afterAdd /home/yeoman/.npm/generator-angular/0.11.1/package/package.json written
+47 silly install resolved [ { name: 'generator-angular',
+47 silly install resolved     version: '0.11.1',
+47 silly install resolved     description: 'Yeoman generator for AngularJS',
+47 silly install resolved     keywords:
+47 silly install resolved      [ 'yeoman-generator',
+47 silly install resolved        'scaffold',
+47 silly install resolved        'framework',
+47 silly install resolved        'component',
+47 silly install resolved        'front-end',
+47 silly install resolved        'app',
+47 silly install resolved        'angular' ],
+47 silly install resolved     author: { name: 'The Yeoman Team' },
+47 silly install resolved     main: 'app/index.js',
+47 silly install resolved     files:
+47 silly install resolved      [ 'app',
+47 silly install resolved        'common',
+47 silly install resolved        'constant',
+47 silly install resolved        'controller',
+47 silly install resolved        'decorator',
+47 silly install resolved        'directive',
+47 silly install resolved        'factory',
+47 silly install resolved        'filter',
+47 silly install resolved        'main',
+47 silly install resolved        'provider',
+47 silly install resolved        'route',
+47 silly install resolved        'service',
+47 silly install resolved        'templates',
+47 silly install resolved        'value',
+47 silly install resolved        'view',
+47 silly install resolved        'script-base.js',
+47 silly install resolved        'util.js' ],
+47 silly install resolved     repository:
+47 silly install resolved      { type: 'git',
+47 silly install resolved        url: 'https://github.com/yeoman/generator-angular' },
+47 silly install resolved     scripts: { test: 'mocha' },
+47 silly install resolved     dependencies:
+47 silly install resolved      { wiredep: '^2.2.0',
+47 silly install resolved        'yeoman-generator': '^0.16.0',
+47 silly install resolved        yosay: '^1.0.2',
+47 silly install resolved        chalk: '^0.5.0' },
+47 silly install resolved     peerDependencies: { 'generator-karma': '>=0.9.0', yo: '>=1.0.0' },
+47 silly install resolved     devDependencies:
+47 silly install resolved      { grunt: '~0.4.1',
+47 silly install resolved        'grunt-contrib-jshint': '~0.11.0',
+47 silly install resolved        'grunt-conventional-changelog': '~1.1.0',
+47 silly install resolved        'grunt-release': '~0.11.0',
+47 silly install resolved        'load-grunt-tasks': '~3.1.0',
+47 silly install resolved        mocha: '*',
+47 silly install resolved        semver: '~4.2.0',
+47 silly install resolved        'underscore.string': '~2.3.1' },
+47 silly install resolved     engines: { node: '>=0.10.0', npm: '>=1.2.10' },
+47 silly install resolved     licenses: [ [Object] ],
+47 silly install resolved     gitHead: '1173a57caca7a9614bdeadd4c916a00d3769de6f',
+47 silly install resolved     bugs: { url: 'https://github.com/yeoman/generator-angular/issues' },
+47 silly install resolved     homepage: 'https://github.com/yeoman/generator-angular',
+47 silly install resolved     _id: 'generator-angular@0.11.1',
+47 silly install resolved     _shasum: 'f469e28e4ce67639a47c690ba5e54f90558d8e8f',
+47 silly install resolved     _from: 'generator-angular@*',
+47 silly install resolved     _npmVersion: '2.4.1',
+47 silly install resolved     _nodeVersion: '0.10.35',
+47 silly install resolved     _npmUser: { name: 'eddiemonge', email: 'eddie+npm@eddiemonge.com' },
+47 silly install resolved     maintainers:
+47 silly install resolved      [ [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object] ],
+47 silly install resolved     dist:
+47 silly install resolved      { shasum: 'f469e28e4ce67639a47c690ba5e54f90558d8e8f',
+47 silly install resolved        tarball: 'http://registry.npmjs.org/generator-angular/-/generator-angular-0.11.1.tgz' },
+47 silly install resolved     directories: {},
+47 silly install resolved     _resolved: 'https://registry.npmjs.org/generator-angular/-/generator-angular-0.11.1.tgz' } ]
+48 info install generator-angular@0.11.1 into /usr/lib
+49 info installOne generator-angular@0.11.1
+50 verbose installOne of generator-angular to /usr/lib not in flight; installing
+51 verbose lock using /home/yeoman/.npm/_locks/generator-angular-4934d9dc484271ac.lock for /usr/lib/node_modules/generator-angular
+52 silly install write writing generator-angular 0.11.1 to /usr/lib/node_modules/generator-angular
+53 silly cache addNamed cb generator-angular@0.11.1
+54 verbose unbuild lib/node_modules/generator-angular
+55 silly gentlyRm /usr/lib/node_modules/generator-angular is being purged from base /usr
+56 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/generator-angular
+57 verbose tar unpack /home/yeoman/.npm/generator-angular/0.11.1/package.tgz
+58 verbose tar unpacking to /usr/lib/node_modules/generator-angular
+59 silly gentlyRm /usr/lib/node_modules/generator-angular is being purged
+60 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/generator-angular
+61 silly gunzTarPerm modes [ '755', '644' ]
+62 error tar.unpack untar error /home/yeoman/.npm/generator-angular/0.11.1/package.tgz
+63 verbose unlock done using /home/yeoman/.npm/_locks/generator-angular-4934d9dc484271ac.lock for /usr/lib/node_modules/generator-angular
+64 verbose fstream_path /usr/lib/node_modules/generator-angular
+65 verbose fstream_type Directory
+66 verbose fstream_class DirWriter
+67 verbose stack Error: EACCES, mkdir '/usr/lib/node_modules/generator-angular'
+68 verbose fstream_stack /usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+68 verbose fstream_stack /usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+68 verbose fstream_stack Object.oncomplete (fs.js:108:15)
+69 verbose cwd /src
+70 error Linux 3.16.7-tinycore64
+71 error argv "node" "/usr/bin/npm" "install" "-g" "generator-angular"
+72 error node v0.10.38
+73 error npm  v2.7.4
+74 error path /usr/lib/node_modules/generator-angular
+75 error code EACCES
+76 error errno 3
+77 error Error: EACCES, mkdir '/usr/lib/node_modules/generator-angular'
+77 error  { [Error: EACCES, mkdir '/usr/lib/node_modules/generator-angular']
+77 error   errno: 3,
+77 error   code: 'EACCES',
+77 error   path: '/usr/lib/node_modules/generator-angular',
+77 error   fstream_type: 'Directory',
+77 error   fstream_path: '/usr/lib/node_modules/generator-angular',
+77 error   fstream_class: 'DirWriter',
+77 error   fstream_stack:
+77 error    [ '/usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+77 error      '/usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+77 error      'Object.oncomplete (fs.js:108:15)' ] }
+78 error Please try running this command again as root/Administrator.
+79 verbose exit [ 3, true ]
+80 verbose unbuild lib/node_modules/generator-angular
+81 silly gentlyRm /usr/lib/node_modules/generator-angular is being purged from base /usr
+82 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/generator-angular
