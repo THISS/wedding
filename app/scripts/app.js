@@ -9,7 +9,7 @@
  * Main module of the application.
  */
 angular
-  .module('srcApp', [
+  .module('WeddingApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',

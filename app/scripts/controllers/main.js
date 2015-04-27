@@ -7,7 +7,7 @@
  * # MainCtrl
  * Controller of the srcApp
  */
-angular.module('srcApp')
+angular.module('WeddingApp')
   .controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
