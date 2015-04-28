@@ -22,6 +22,7 @@
 
     <!-- Add your site or application content here -->
     <main>
+<!--  need to make hero directive to work alongside the navigation for showing hero photo <hero></hero> -->
       <header>
         <aside>BRENTON HOLSWICH <br /> &amp; <br />KIMBERLY YOUNG</aside>
         <nav>
@@ -68,11 +69,17 @@
         <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <!-- app -->
         <script src="scripts/app.js"></script>
+        <!-- Controllers -->
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/details.js"></script>
         <script src="scripts/controllers/rsvp.js"></script>
         <script src="scripts/controllers/proposal.js"></script>
+        <!-- Directives -->
+        <script src="scripts/directives/photo.js"></script>
+        <script src="scripts/directives/hero.js"></script>
+
         <!-- endbuild -->
   </body>
 </html>
