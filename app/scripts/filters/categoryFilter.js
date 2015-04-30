@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module("WeddingApp").filter('categoryFilter',function(){
   return function(collection, category){
     var newCollection = [];

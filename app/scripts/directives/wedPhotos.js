@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module('WeddingApp').directive('wedPhotos',function(){
   // *** This is from the soup to bits codeschool staying sharp with angular
   return {
@@ -34,14 +36,13 @@ angular.module('WeddingApp').directive('wedPhotos',function(){
         {
           activeCategory = category;
         }
-        scope.category = activeCategory;
+        scope.photoset.category = activeCategory;
       };
 
       scope.reset = function(){
         activeCategory = {}
-        scope.category = activeCategory;
+        scope.photoset.category = activeCategory;
       };
-      window.s = scope;
     }
   };
 });
