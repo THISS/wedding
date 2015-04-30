@@ -10,16 +10,14 @@
  */
 angular
   .module('WeddingApp', [
-    'ngAnimate',
-    'ngCookies',
-    'ngResource',
-    'ngRoute',
-    'ngSanitize',
-    'ngTouch'
+    'ngRoute'
   ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
+        redirectTo: '/us'
+      })
+      .when('/us', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
@@ -36,6 +34,6 @@ angular
         controller: 'ProposalCtrl'
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/us'
       });
   });

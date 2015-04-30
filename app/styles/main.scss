@@ -1,2 +1,9 @@
 // bower:scss
 // endbower
+.hero li {
+  display: none;
+}
+
+.hero .active {
+  display:inline;
+}
