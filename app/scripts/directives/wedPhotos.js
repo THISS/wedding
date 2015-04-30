@@ -1,8 +1,7 @@
 angular.module('WeddingApp').directive('wedPhotos',function(){
   // *** This is from the soup to bits codeschool staying sharp with angular
   return {
-    require: "?ngModel",
-    templateUrl: 'views/photo.html',
+    templateUrl: 'views/wedPhotos.html',
     controller: function($scope){
       // We set the photoset object in the controller as this will be our point of reference
       $scope.photoset = {};
@@ -11,11 +10,15 @@ angular.module('WeddingApp').directive('wedPhotos',function(){
     },
     link: function(scope,element,attrs,ngModelCtrl){
       var activeCategory = {};
-      scope.categories = [
+      scope.photoset.categories = [
         {name: "Our STD's",id:1},
         {name: "Couch Fun",id:2},
         {name: "Lake Day",id:3},
         {name: "Our Journey",id:4}
+      ];
+
+      scope.photoset.photos = [
+        {url: "http://www.fillmurray.com/g/200/300",categoryId:1}
       ];
 
       scope.isActive = function(category)
@@ -31,18 +34,14 @@ angular.module('WeddingApp').directive('wedPhotos',function(){
         {
           activeCategory = category;
         }
-
-        ngModelCtrl.$setViewValue(activeCategory);
+        scope.category = activeCategory;
       };
 
       scope.reset = function(){
         activeCategory = {}
-        ngModelCtrl.$setViewValue(activeCategory);
+        scope.category = activeCategory;
       };
-
-      ngModelCtrl.$render = function(){
-        activeCategory = ngModelCtrl.$viewValue;
-      };
+      window.s = scope;
     }
   };
 });

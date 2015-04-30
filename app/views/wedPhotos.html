@@ -4,12 +4,14 @@
       <h2>OUR SNAPS</h2>
       <ul>
         <!-- Make a reset function for the all button -->
-        <li><a href="" ng-click="reset">ALL</a></li>
+        <li ng-click="reset()"><a href="" >ALL</a></li>
         <li
         ng-repeat="category in photoset.categories"
         ng-class="{'active': isActive(category)}"
         ng-click="setCategory(category)">
-          <a>{{category.name}}</a>
+          <a href="">
+            {{category.name}}
+          </a>
         </li>
       </ul>
     </nav>
@@ -17,7 +19,7 @@
       <article class="photo-box">
         <img
         ng-repeat="photo in photoset.photos | categoryFilter:photoset.category"
-        ng-src="photo.url"
+        ng-src="{{photo.url}}"
         />
 
       </article>
