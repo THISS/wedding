@@ -3,21 +3,23 @@
     <nav>
       <h2>OUR SNAPS</h2>
       <ul>
-        <li><a>All</a></li>
-        <li><a>Our STD's</a></li>
-        <li><a>Couch Fun</a></li>
-        <li><a>Lake Day</a></li>
-        <li><a>Our Journey</a></li>
+        <!-- Make a reset function for the all button -->
+        <li><a href="" ng-click="reset">ALL</a></li>
+        <li
+        ng-repeat="category in photoset.categories"
+        ng-class="{'active': isActive(category)}"
+        ng-click="setCategory(category)">
+          <a>{{category.name}}</a>
+        </li>
       </ul>
     </nav>
     <section class="photos">
       <article class="photo-box">
-        <photo category="" ng-repeat="">
-          <!-- <div class="photo-container">
-            <img src="" alt="" />
-            <span class="photo-overlay">+</span>
-          </div> -->
-        </photo>
+        <img
+        ng-repeat="photo in photoset.photos | categoryFilter:photoset.category"
+        ng-src="photo.url"
+        />
+
       </article>
     </section>
   </article>
