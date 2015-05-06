@@ -3,6 +3,7 @@
 // Target / Context(or parent) = Fluid Size in percentage or ems
 
 // IMPORTS
+@import "compass/utilities/general/clearfix";
 
 // COLOURS
 
@@ -22,28 +23,42 @@ body {
 
 header {
   background-color: #3c3c3c;
+  @include clearfix();
   aside {
     float: left;
   }
   nav {
     float: right;
   }
-  @import "compass/utilities/general/clearfix";
 }
 
-
-
-
-.hero ul {
+// hero
+.hero{
+  width: 100%;
+}
+.hero-container-list {
+  // This negates the margin that normalize creates for ul elements
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
   -webkit-padding-start: 0;
+  li{
+    display: none;
+  }
+  .active {
+    display:block;
+  }
 }
 
-.hero li {
-  display: none;
+// header
+.header-names {
+  p{
+    text-align: center;
+  }
+  padding:1%;
 }
 
-.hero .active {
-  display:inline;
+.navbar-nav {
+  li{
+    display: inline;
+  }
 }
