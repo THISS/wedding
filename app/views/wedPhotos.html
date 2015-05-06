@@ -17,10 +17,16 @@
     </nav>
     <section class="photos">
       <article class="photo-box">
-        <img
+        <a
         ng-repeat="photo in photoset.photos | categoryFilter:photoset.category"
-        ng-src="{{photo.thumbUrl}}"
-        />
+        data-lightbox="{{photo.id}}"
+        ng-href="{{photo.url}}"
+        >
+          <img
+          ng-src="{{photo.thumbUrl}}"
+          />
+        </a>
+
       </article>
     </section>
   </article>
