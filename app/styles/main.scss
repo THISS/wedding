@@ -1,5 +1,18 @@
 // bower:scss
 // endbower
+body {
+  font-size: 16px;
+}
+
+
+
+
+.hero ul {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-padding-start: 0;
+}
+
 .hero li {
   display: none;
 }
