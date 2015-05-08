@@ -15,8 +15,8 @@
       position: absolute;
       padding: 0.3em;
       border:$lighterGray solid 3px;
-      color: $darkGray;
-      background-color: $transparentWhite;
+      color: white;
+      background-color: $transparentGray;
     }
   }
   .active {
@@ -37,10 +37,12 @@ left: 25%;
 
 #hero-rsvp {
 top: 10%;
-left: 15%;
+left: 65%;
 }
 
 #hero-proposal {
-top: 10%;
-left: 65%;
+  top: 10%;
+  left: 65%;
+  background-color: $transparentWhite;
+  color: $darkGray;
 }
