@@ -1,0 +1,49 @@
+.wed-photos {
+  width: 95%;
+  margin: auto;
+  nav {
+    @include clearfix();
+  }
+  h2 {
+    float: left;
+  }
+  ul {
+    list-style-type: none;
+    float: right;
+  }
+  li {
+    display: inline-block;
+    margin: 0 2em;
+    padding: .5em;
+    a {
+      color: $lightGreen;
+      &:hover {
+        color: $mediumGray;
+      }
+    }
+    &.active {
+      border: $lightBlue solid 2px;
+      a {
+        color: $mediumGray;
+      }
+    }
+  }
+}
+
+.photo-frame {
+  height: 250px;
+  width: 250px;
+  border: $darkGray solid 2px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: inline-block;
+  margin: 1em;
+}
+
+.photo-hover {
+  height: 100%;
+  width: 100%;
+  &:hover {
+    background: $transparentGray url(/images/wedphotos/symbol/plus2.png) center center no-repeat;
+  }
+}

@@ -21,7 +21,13 @@ angular.module('WeddingApp').directive('wedPhotos',function(){
       scope.photoset.category = {};
 
       scope.photoset.photos = [
-        {url: "http://www.fillmurray.com/g/200/300",categoryId:1,thumbUrl: "http://www.fillmurray.com/g/150/150",id: 1}
+        {url: "http://www.fillmurray.com/g/200/200",categoryId:1,thumbUrl: "http://www.fillmurray.com/g/150/190",id: 1},
+        {url: "http://www.fillmurray.com/g/300/200",categoryId:2,thumbUrl: "http://www.fillmurray.com/g/250/150",id: 2},
+        {url: "http://www.fillmurray.com/g/300/300",categoryId:2,thumbUrl: "http://www.fillmurray.com/g/350/350",id: 3},
+        {url: "http://www.fillmurray.com/g/200/300",categoryId:3,thumbUrl: "http://www.fillmurray.com/g/100/150",id: 4},
+        {url: "http://www.fillmurray.com/g/300/300",categoryId:4,thumbUrl: "http://www.fillmurray.com/g/150/250",id: 5},
+        {url: "http://www.fillmurray.com/g/400/300",categoryId:1,thumbUrl: "http://www.fillmurray.com/g/150/160",id: 6},
+        {url: "http://www.fillmurray.com/g/200/300",categoryId:4,thumbUrl: "http://www.fillmurray.com/g/150/180",id: 7}
       ];
 
       scope.isActive = function(category)
