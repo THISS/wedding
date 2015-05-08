@@ -1,0 +1,41 @@
+// for main
+.the-couple {
+  background-color: $lightGreen;
+  margin-top: -16px;
+  article {
+    display: inline-block;
+    width: 49%;
+  }
+  figure {
+    border: $lightBlue solid 0.5em;
+    margin: 1.5em auto 0;
+    @include border-radius(15px);
+    width: 370px;
+    height: 370px;
+  }
+  figcaption {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+}
+
+.bio {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.bio-image {
+  background: center center no-repeat;
+  margin: 2em;
+  &.him {
+    background-image: url(/images/us/dino.png);
+    width: 215px;
+    height: 178px;
+    margin-left: 40%;
+  }
+  &.her {
+    background-image: url(/images/us/peng.png);
+    width: 238px;
+    height: 196px;
+  }
+}

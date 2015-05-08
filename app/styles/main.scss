@@ -5,6 +5,7 @@
 
 // IMPORTS
 @import "compass/utilities/general/clearfix";
+@import "compass/css3/border-radius";
 
 // COLOURS
 $lightGray: #cccccc;
@@ -46,10 +47,6 @@ a {
   text-decoration: none;
 }
 
-.content {
-  width: 90%;
-  margin: auto;
-}
 // hero
 @import "directives/hero";
 
@@ -61,3 +58,6 @@ a {
 
 // wedphotos
 @import "directives/wedphotos";
+
+// us
+@import "partials/us";
