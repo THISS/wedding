@@ -14,18 +14,20 @@
         </li>
       </ul>
     </nav>
-    <section class="photos">
-      <article class="photo-box">
-        <a
-        ng-repeat="photo in photoset.photos | categoryFilter:photoset.category"
-        data-lightbox="{{photo.id}}"
-        ng-href="{{photo.url}}"
-        >
-          <img
-          ng-src="{{photo.thumbUrl}}"
-          />
-        </a>
+    <article class="photo-box">
 
-      </article>
-    </section>
+        <div class="photo-frame" ng-repeat="photo in photoset.photos | categoryFilter:photoset.category">
+          <a
+          data-lightbox="{{photo.id}}"
+          ng-href="{{photo.url}}"
+          >
+          
+            <img
+            ng-src="{{photo.thumbUrl}}"
+            />
+
+          </a>
+        </div>
+
+    </article>
 </section>

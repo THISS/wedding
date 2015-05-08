@@ -10,6 +10,9 @@ footer {
     width: 90%;
     margin: auto;
     color: $lightBlue;
+    span {
+      margin-left: 0.25em;
+    }
 }
 
 .footer-nav {
@@ -29,6 +32,8 @@ footer {
   background-repeat: no-repeat;
   background-image: url(/images/footer/rings.png);
   background-position-y: 1em;
+  background-position-x: center;
+  margin: auto;
 }
 
 .mini-groom {
@@ -38,4 +43,5 @@ footer {
   background-repeat: no-repeat;
   display: inline-block;
   background-position-y: 2px;
+  margin-left: 15%;
 }

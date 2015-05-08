@@ -21,7 +21,7 @@ angular.module('WeddingApp').directive('wedPhotos',function(){
       scope.photoset.category = {};
 
       scope.photoset.photos = [
-        {url: "http://www.fillmurray.com/g/200/300",categoryId:1,thumbUrl: "http://www.fillmurray.com/g/50/50",id: 1}
+        {url: "http://www.fillmurray.com/g/200/300",categoryId:1,thumbUrl: "http://www.fillmurray.com/g/150/150",id: 1}
       ];
 
       scope.isActive = function(category)

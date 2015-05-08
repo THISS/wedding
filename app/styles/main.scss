@@ -10,6 +10,7 @@
 $lightGray: #cccccc;
 $lighterGray: #cfcfcf;
 $navbarGray: #3c3c3c;
+$mediumGray: #999999;
 $darkGray: #666666;
 $darkerGray: #333333;
 $transparentWhite: rgba(255,255,255,0.4);
@@ -40,6 +41,10 @@ body {
   // background-color: blue;
 }
 
+.content {
+  width: 90%;
+  margin: auto;
+}
 // hero
 @import "directives/hero";
 
@@ -50,3 +55,53 @@ body {
 @import "partials/footer";
 
 // wedphotos
+.wed-photos {
+  width: 95%;
+  margin: auto;
+  nav {
+    @include clearfix();
+  }
+  h2 {
+    float: left;
+  }
+  ul {
+    list-style-type: none;
+    float: right;
+  }
+  li {
+    display: inline-block;
+    margin: 0 2em;
+    padding: .5em;
+    &.active {
+      border: $lightBlue solid 2px;
+      a {
+        color: $mediumGray;
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+    color: $lightGreen;
+    &:hover {
+      color: $mediumGray;
+    }
+  }
+}
+
+.photo-box {
+  a {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+.photo-frame {
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+  border: $darkGray solid 2px;
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
