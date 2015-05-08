@@ -18,6 +18,7 @@ angular.module('WeddingApp').directive('wedPhotos',function(){
         {name: "Lake Day",id:3},
         {name: "Our Journey",id:4}
       ];
+      scope.photoset.category = {};
 
       scope.photoset.photos = [
         {url: "http://www.fillmurray.com/g/200/300",categoryId:1,thumbUrl: "http://www.fillmurray.com/g/50/50",id: 1}
@@ -27,7 +28,16 @@ angular.module('WeddingApp').directive('wedPhotos',function(){
       {
         return activeCategory.id === category.id;
       };
-
+      scope.isAll = function()
+      {
+        if(scope.photoset.category && scope.photoset.category.id)
+        {
+          return false;
+        }else
+        {
+          return true;
+        }
+      };
       scope.setCategory = function(category){
         if(category === activeCategory)
         {

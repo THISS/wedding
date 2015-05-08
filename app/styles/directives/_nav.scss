@@ -1,0 +1,40 @@
+main>header {
+  background-color: $navbarGray;
+  color: white;
+  @include clearfix();
+  aside {
+    float: left;
+  }
+  nav {
+    float: right;
+  }
+}
+
+.header-names {
+  font-size: 1.25em;
+  text-align: center;
+  padding:1em;
+  p {
+    margin: .25em 0;
+  }
+}
+// Navigation List
+.navbar-nav {
+  margin-top: 5em;
+  li{
+    display: inline;
+    margin-right: 2em;
+    a {
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      &:hover {
+        color: $lightGray;
+      }
+      &.current {
+        color: $lightBlue;
+        text-decoration: underline;
+      }
+    }
+  }
+}

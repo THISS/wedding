@@ -1,0 +1,41 @@
+footer {
+  background-color: $navbarGray;
+  section {
+    display: inline-block;
+    width: 33%;
+  }
+}
+
+.footer {
+    width: 90%;
+    margin: auto;
+    color: $lightBlue;
+}
+
+.footer-nav {
+  list-style-type: none;
+  a {
+    color: $lightGreen;
+    text-decoration: none;
+    &:hover {
+      color: $lightBlue;
+    }
+  }
+}
+
+.rings {
+  height: 80px;
+  width: 100px;
+  background-repeat: no-repeat;
+  background-image: url(/images/footer/rings.png);
+  background-position-y: 1em;
+}
+
+.mini-groom {
+  width: 18px;
+  height: 40px;
+  background-image: url(/images/footer/groom.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-position-y: 2px;
+}

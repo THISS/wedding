@@ -1,12 +1,20 @@
 // bower:scss
 // endbower
+
 // Target / Context(or parent) = Fluid Size in percentage or ems
 
 // IMPORTS
 @import "compass/utilities/general/clearfix";
 
 // COLOURS
-
+$lightGray: #cccccc;
+$lighterGray: #cfcfcf;
+$navbarGray: #3c3c3c;
+$darkGray: #666666;
+$darkerGray: #333333;
+$transparentWhite: rgba(255,255,255,0.4);
+$lightBlue: #99FFFF;
+$lightGreen: #ACD373;
 
 // MIXINS
 @mixin padmarfix {
@@ -32,51 +40,13 @@ body {
   // background-color: blue;
 }
 
-header {
-  background-color: #3c3c3c;
-  @include clearfix();
-  aside {
-    float: left;
-  }
-  nav {
-    float: right;
-  }
-}
-
 // hero
-.hero{
-  width: 100%;
-  img{
-    width:100%;
-    float:left;
-  }
-}
-.hero-container-list {
-  // This negates the margin that normalize creates for ul elements
-  @include padmarfix();
-  li{
-    display: none;
-    h1{
-      position: absolute;
-      top: 10%;
-      left: 15%;
-      border:#cccccc solid 3px;
-    }
-  }
-  .active {
-    display:block;
-  }
-  @include clearfix();
-}
+@import "directives/hero";
 
-// header
-.header-names {
-  text-align: center;
-  padding:1%;
-}
+// navbar
+@import "directives/nav";
 
-.navbar-nav {
-  li{
-    display: inline;
-  }
-}
+// footer
+@import "partials/footer";
+
+// wedphotos

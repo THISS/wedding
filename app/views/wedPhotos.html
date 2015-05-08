@@ -1,10 +1,9 @@
 <section class="wed-photos">
-  <article class="photo-gallery">
     <nav>
       <h2>OUR SNAPS</h2>
       <ul>
         <!-- Make a reset function for the all button -->
-        <li ng-click="reset()"><a href="" >ALL</a></li>
+        <li ng-click="reset()" ng-class="{'active': isAll()}"><a href="" >ALL</a></li>
         <li
         ng-repeat="category in photoset.categories"
         ng-class="{'active': isActive(category)}"
@@ -29,5 +28,4 @@
 
       </article>
     </section>
-  </article>
 </section>
