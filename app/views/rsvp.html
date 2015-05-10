@@ -1,1 +1,40 @@
 <!-- Use the funny template that kim had found and make it digital -->
+<section class="rsvp-container">
+  <form id="rsvp-form" action="rsvp-post.php" method="post">
+    <div class="input-wrap">
+      <label for="name">What's Your Full Name?</label>
+      <input type="text" name="name" id="name" class="rsvp-text-input" placeholder="Type your full name here" required>
+    </div>
+
+    <div class="input-wrap">
+      <label for="number">Replying for how many?</label>
+      <input type="number" name="number" id="number" class="rsvp-number-input" required>
+    </div>
+
+    <!-- Use ngShow as well as testing how many guests are being replied for to show the next element -->
+    <div class="input-wrap" ng-show="true">
+      <label for="group-name">What Are Their Full Names?</label>
+      <input type="textarea" name="group-name" id="group-name" class="rsvp-textarea-input">
+    </div>
+
+
+
+    <div class="input-wrap checklist">
+      <label for="item1">Your Name:</label>
+      <input type="checkbox" name="item1" id="response" class="rsvp-checkbox-input">
+
+      <label for="item2">Your Name:</label>
+      <input type="checkbox" name="item2" id="response" class="rsvp-checkbox-input">
+
+      <label for="item3">Your Name:</label>
+      <input type="checkbox" name="item3" id="response" class="rsvp-checkbox-input">
+
+      <label for="item4">Your Name:</label>
+      <input type="checkbox" name="item4" id="response" class="rsvp-checkbox-input">
+
+    </div>
+
+    <input type="submit" class="rsvp-submit" value="Reply To Us">
+  </form>
+  <p>FOR ANY QUESTION PLEASE EMAIL: <a href="mailto:kimandbrenton@gmail.com">kimandbrenton@gmail.com</a></p>
+</section>

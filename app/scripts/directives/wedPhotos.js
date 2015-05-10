@@ -21,13 +21,38 @@ angular.module('WeddingApp').directive('wedPhotos',function(){
       scope.photoset.category = {};
 
       scope.photoset.photos = [
-        {url: "http://www.fillmurray.com/g/200/200",categoryId:1,thumbUrl: "http://www.fillmurray.com/g/150/190",id: 1},
-        {url: "http://www.fillmurray.com/g/300/200",categoryId:2,thumbUrl: "http://www.fillmurray.com/g/250/150",id: 2},
-        {url: "http://www.fillmurray.com/g/300/300",categoryId:2,thumbUrl: "http://www.fillmurray.com/g/350/350",id: 3},
-        {url: "http://www.fillmurray.com/g/200/300",categoryId:3,thumbUrl: "http://www.fillmurray.com/g/100/150",id: 4},
-        {url: "http://www.fillmurray.com/g/300/300",categoryId:4,thumbUrl: "http://www.fillmurray.com/g/150/250",id: 5},
-        {url: "http://www.fillmurray.com/g/400/300",categoryId:1,thumbUrl: "http://www.fillmurray.com/g/150/160",id: 6},
-        {url: "http://www.fillmurray.com/g/200/300",categoryId:4,thumbUrl: "http://www.fillmurray.com/g/150/180",id: 7}
+        {url: "/images/wedphotos/large/0.jpg",categoryId:1,thumbUrl: "/images/wedphotos/thumb/0.jpg"},
+        {url: "/images/wedphotos/large/1.jpg",categoryId:1,thumbUrl: "/images/wedphotos/thumb/1.jpg"},
+        {url: "/images/wedphotos/large/10.jpg",categoryId:3,thumbUrl: "/images/wedphotos/thumb/10.jpg"},
+        {url: "/images/wedphotos/large/11.jpg",categoryId:3,thumbUrl: "/images/wedphotos/thumb/11.jpg"},
+        {url: "/images/wedphotos/large/12.jpg",categoryId:3,thumbUrl: "/images/wedphotos/thumb/12.jpg"},
+        {url: "/images/wedphotos/large/14.jpg",categoryId:3,thumbUrl: "/images/wedphotos/thumb/14.jpg"},
+        {url: "/images/wedphotos/large/15.jpg",categoryId:3,thumbUrl: "/images/wedphotos/thumb/15.jpg"},
+        {url: "/images/wedphotos/large/16.jpg",categoryId:3,thumbUrl: "/images/wedphotos/thumb/16.jpg"},
+        {url: "/images/wedphotos/large/17.jpg",categoryId:3,thumbUrl: "/images/wedphotos/thumb/17.jpg"},
+        {url: "/images/wedphotos/large/18.jpg",categoryId:3,thumbUrl: "/images/wedphotos/thumb/18.jpg"},
+        {url: "/images/wedphotos/large/19.jpg",categoryId:1,thumbUrl: "/images/wedphotos/thumb/19.jpg"},
+        {url: "/images/wedphotos/large/2.jpg",categoryId:1,thumbUrl: "/images/wedphotos/thumb/2.jpg"},
+        {url: "/images/wedphotos/large/20.jpg",categoryId:3,thumbUrl: "/images/wedphotos/thumb/20.jpg"},
+        {url: "/images/wedphotos/large/21.jpg",categoryId:3,thumbUrl: "/images/wedphotos/thumb/21.jpg"},
+        {url: "/images/wedphotos/large/22.jpg",categoryId:3,thumbUrl: "/images/wedphotos/thumb/22.jpg"},
+        {url: "/images/wedphotos/large/23.jpg",categoryId:3,thumbUrl: "/images/wedphotos/thumb/23.jpg"},
+        {url: "/images/wedphotos/large/24.jpg",categoryId:3,thumbUrl: "/images/wedphotos/thumb/24.jpg"},
+        {url: "/images/wedphotos/large/25.jpg",categoryId:2,thumbUrl: "/images/wedphotos/thumb/25.jpg"},
+        {url: "/images/wedphotos/large/26.jpg",categoryId:2,thumbUrl: "/images/wedphotos/thumb/26.jpg"},
+        {url: "/images/wedphotos/large/27.jpg",categoryId:1,thumbUrl: "/images/wedphotos/thumb/27.jpg"},
+        {url: "/images/wedphotos/large/28.jpg",categoryId:1,thumbUrl: "/images/wedphotos/thumb/28.jpg"},
+        {url: "/images/wedphotos/large/29.jpg",categoryId:2,thumbUrl: "/images/wedphotos/thumb/29.jpg"},
+        {url: "/images/wedphotos/large/3.jpg",categoryId:1,thumbUrl: "/images/wedphotos/thumb/3.jpg"},
+        {url: "/images/wedphotos/large/30.jpg",categoryId:2,thumbUrl: "/images/wedphotos/thumb/30.jpg"},
+        {url: "/images/wedphotos/large/31.jpg",categoryId:1,thumbUrl: "/images/wedphotos/thumb/31.jpg"},
+        {url: "/images/wedphotos/large/4.jpg",categoryId:3,thumbUrl: "/images/wedphotos/thumb/4.jpg"},
+        {url: "/images/wedphotos/large/5.jpg",categoryId:3,thumbUrl: "/images/wedphotos/thumb/5.jpg"},
+        {url: "/images/wedphotos/large/6.jpg",categoryId:3,thumbUrl: "/images/wedphotos/thumb/6.jpg"},
+        {url: "/images/wedphotos/large/7.jpg",categoryId:3,thumbUrl: "/images/wedphotos/thumb/7.jpg"},
+        {url: "/images/wedphotos/large/8.jpg",categoryId:3,thumbUrl: "/images/wedphotos/thumb/8.jpg"},
+        {url: "/images/wedphotos/large/9.jpg",categoryId:3,thumbUrl: "/images/wedphotos/thumb/9.jpg"}
+
       ];
 
       scope.isActive = function(category)

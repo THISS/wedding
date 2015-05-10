@@ -1,0 +1,6 @@
+#!/bin/bash
+COUNTER=0
+for i in $(ls ./thumb/*.jpg); do
+  mv $i ./thumb/$COUNTER.jpg
+  let COUNTER=COUNTER+1
+done

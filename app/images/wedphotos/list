@@ -1,0 +1,5 @@
+#!/bin/bash
+touch photos
+for i in $(ls *.jpg); do
+  echo "{url: \"/images/wedphotos/large/$i\",categoryId:1,thumbUrl: \"/images/wedphotos/thumb/$i\"}," >> photos
+done
