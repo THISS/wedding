@@ -9,7 +9,13 @@ method="post" -->
   ng-submit="formPost()">
     <div class="input-wrap">
       <label for="name">What's Your Full Name?</label>
-      <input type="text" name="name" ng-model="frm.name" id="name" class="rsvp-text-input" placeholder="Type your full name here" required>
+      <input
+      type="text"
+      name="name"
+      ng-model="frm.name"
+      id="name" class="rsvp-text-input"
+      placeholder="eg. Brenton Holswich"
+      required>
     </div>
 
     <div class="input-wrap">
@@ -20,7 +26,7 @@ method="post" -->
       name="number"
       id="number"
       min="1"
-      max="9" 
+      max="9"
       class="rsvp-number-input"
       required>
     </div>
@@ -28,24 +34,31 @@ method="post" -->
     <!-- Use ngShow as well as testing how many guests are being replied for to show the next element -->
     <div class="input-wrap" ng-show="num()">
       <label for="group-name">What Are Their Full Names?</label>
-      <input type="textarea" ng-model="frm.groupName" name="group-name" id="group-name" class="rsvp-textarea-input">
+      <input
+      type="textarea"
+      ng-model="frm.groupName"
+      name="group-name"
+      id="group-name"
+      class="rsvp-textarea-input"
+      placeholder="eg. Kimberly Young, Jersey Dog"
+      >
     </div>
 
     <div class="input-wrap checklist">
       <label for="item1">Gladly Attend:</label>
-      <input type="checkbox" name="item1" ng-model="frm.response.item1" id="response" class="rsvp-checkbox-input">
+      <input type="radio" name="item1" ng-model="frm.response" value="Gladly Attend" id="response" class="rsvp-radio-input">
 
       <label for="item2">Regretfully Decline:</label>
-      <input type="checkbox" name="item2" ng-model="frm.response.item2" id="response" class="rsvp-checkbox-input">
+      <input type="radio" name="item2" ng-model="frm.response" value="Regretfully Decline" id="response" class="rsvp-radio-input">
 
       <label for="item3">Resentfully Attend:</label>
-      <input type="checkbox" name="item3" ng-model="frm.response.item3" id="response" class="rsvp-checkbox-input">
+      <input type="radio" name="item3" ng-model="frm.response" value="Resentfully Attend" id="response" class="rsvp-radio-input">
 
       <label for="item4">Enthusiastically Decline:</label>
-      <input type="checkbox" name="item4" ng-model="frm.response.item4" id="response" class="rsvp-checkbox-input">
+      <input type="radio" name="item4" ng-model="frm.response" value="Enthusiastically Decline" id="response" class="rsvp-radio-input">
 
       <label for="item5">Will Decline To Respond, But Ultimately Attend:</label>
-      <input type="checkbox" name="item5" ng-model="frm.response.item5" id="response" class="rsvp-checkbox-input">
+      <input type="radio" name="item5" ng-model="frm.response" value="Will Decline To Respond, But Ultimately Attend" id="response" class="rsvp-radio-input">
 
       <div class="input-wrap">
         <label for="song">What song will get you dancing?</label>

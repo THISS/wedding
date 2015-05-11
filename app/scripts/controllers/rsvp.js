@@ -27,8 +27,15 @@ angular.module('WeddingApp')
     $scope.formPost = function(){
       // Going to do ajax submit to post.php validator
       RSVP.post(this.frm)
-      .success(function(){console.log('success')})
-      .error(function(){console.log('error')});
+      .success(function(data, status, headers, config){
+        console.log(status);
+        console.log(data);
+        console.log(headers);
+        console.log(config);
+      })
+      .error(function(data,status, headers, config){
+        console.log(status)
+      });
     };
 
   }]);
