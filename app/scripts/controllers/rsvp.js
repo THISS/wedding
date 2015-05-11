@@ -2,16 +2,33 @@
 
 /**
  * @ngdoc function
- * @name srcApp.controller:AboutCtrl
+ * @name WeddingApp.controller:RsvpCtrl
  * @description
- * # AboutCtrl
- * Controller of the srcApp
+ * # RsvpCtrl
+ * Controller of the WeddingApp
  */
 angular.module('WeddingApp')
-  .controller('RsvpCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  .controller('RsvpCtrl', ['$scope',
+  'RSVP',
+  function ($scope, RSVP) {
+
+    $scope.frm = {};
+
+    $scope.num = function(){
+      if(this.frm.number && this.frm.number > 1)
+      {
+        return true;
+      }else
+      {
+        return false;
+      }
+    };
+
+    $scope.formPost = function(){
+      // Going to do ajax submit to post.php validator
+      RSVP.post(this.frm)
+      .success(function(){console.log('success')})
+      .error(function(){console.log('error')});
+    };
+
+  }]);

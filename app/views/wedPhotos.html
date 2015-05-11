@@ -1,6 +1,6 @@
 <section class="wed-photos">
     <nav>
-      <h2>OUR SNAPS</h2>
+      <h2>{{photoset.category.name || "OUR SNAPS"}}</h2>
       <ul>
         <!-- Make a reset function for the all button -->
         <li ng-click="reset()" ng-class="{'active': isAll()}"><a href="" >ALL</a></li>
@@ -15,7 +15,7 @@
       </ul>
     </nav>
     <article class="photo-box">
-      
+
       <a
       ng-repeat="photo in photoset.photos | categoryFilter:photoset.category"
       data-lightbox="our-album"

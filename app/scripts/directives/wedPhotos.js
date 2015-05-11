@@ -10,14 +10,18 @@ angular.module('WeddingApp').directive('wedPhotos',function(){
       // $scope.photoset.categories = [{name: catName, id: #}];
       // $scope.photoset.photos = [{url: imageurl, categoryId: #}];
     },
-    link: function(scope,element,attrs,ngModelCtrl){
+    link: function(scope,element,attrs){
+
       var activeCategory = {};
+
       scope.photoset.categories = [
         {name: "Our STD's",id:1},
         {name: "Couch Fun",id:2},
         {name: "Lake Day",id:3},
-        {name: "Our Journey",id:4}
+        {name: "The Proposal",id:4},
+        {name: "Our Journey",id:5}
       ];
+
       scope.photoset.category = {};
 
       scope.photoset.photos = [
@@ -59,6 +63,7 @@ angular.module('WeddingApp').directive('wedPhotos',function(){
       {
         return activeCategory.id === category.id;
       };
+
       scope.isAll = function()
       {
         if(scope.photoset.category && scope.photoset.category.id)
@@ -69,6 +74,7 @@ angular.module('WeddingApp').directive('wedPhotos',function(){
           return true;
         }
       };
+
       scope.setCategory = function(category){
         if(category === activeCategory)
         {
@@ -84,6 +90,21 @@ angular.module('WeddingApp').directive('wedPhotos',function(){
         activeCategory = {}
         scope.photoset.category = activeCategory;
       };
+
+      if(attrs.catId)
+      {
+        var category;
+        for(var i = 0, l = scope.photoset.categories.length; i < l; i++)
+        {
+          category = scope.photoset.categories[i];
+          if(parseInt(attrs.catId) === category.id)
+          {
+            scope.setCategory(category);
+            scope.photoset.categories = [category];
+            break;
+          }
+        }
+      }
     }
   };
 });

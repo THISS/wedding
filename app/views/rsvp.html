@@ -1,36 +1,61 @@
 <!-- Use the funny template that kim had found and make it digital -->
+
+<!-- action="rsvp-post.php"
+method="post" -->
 <section class="rsvp-container">
-  <form id="rsvp-form" action="rsvp-post.php" method="post">
+  <form
+  id="rsvp-form"
+
+  ng-submit="formPost()">
     <div class="input-wrap">
       <label for="name">What's Your Full Name?</label>
-      <input type="text" name="name" id="name" class="rsvp-text-input" placeholder="Type your full name here" required>
+      <input type="text" name="name" ng-model="frm.name" id="name" class="rsvp-text-input" placeholder="Type your full name here" required>
     </div>
 
     <div class="input-wrap">
       <label for="number">Replying for how many?</label>
-      <input type="number" name="number" id="number" class="rsvp-number-input" required>
+      <input
+      type="number"
+      ng-model="frm.number"
+      name="number"
+      id="number"
+      min="1"
+      max="9" 
+      class="rsvp-number-input"
+      required>
     </div>
 
     <!-- Use ngShow as well as testing how many guests are being replied for to show the next element -->
-    <div class="input-wrap" ng-show="true">
+    <div class="input-wrap" ng-show="num()">
       <label for="group-name">What Are Their Full Names?</label>
-      <input type="textarea" name="group-name" id="group-name" class="rsvp-textarea-input">
+      <input type="textarea" ng-model="frm.groupName" name="group-name" id="group-name" class="rsvp-textarea-input">
     </div>
 
-
-
     <div class="input-wrap checklist">
-      <label for="item1">Your Name:</label>
-      <input type="checkbox" name="item1" id="response" class="rsvp-checkbox-input">
+      <label for="item1">Gladly Attend:</label>
+      <input type="checkbox" name="item1" ng-model="frm.response.item1" id="response" class="rsvp-checkbox-input">
 
-      <label for="item2">Your Name:</label>
-      <input type="checkbox" name="item2" id="response" class="rsvp-checkbox-input">
+      <label for="item2">Regretfully Decline:</label>
+      <input type="checkbox" name="item2" ng-model="frm.response.item2" id="response" class="rsvp-checkbox-input">
 
-      <label for="item3">Your Name:</label>
-      <input type="checkbox" name="item3" id="response" class="rsvp-checkbox-input">
+      <label for="item3">Resentfully Attend:</label>
+      <input type="checkbox" name="item3" ng-model="frm.response.item3" id="response" class="rsvp-checkbox-input">
 
-      <label for="item4">Your Name:</label>
-      <input type="checkbox" name="item4" id="response" class="rsvp-checkbox-input">
+      <label for="item4">Enthusiastically Decline:</label>
+      <input type="checkbox" name="item4" ng-model="frm.response.item4" id="response" class="rsvp-checkbox-input">
+
+      <label for="item5">Will Decline To Respond, But Ultimately Attend:</label>
+      <input type="checkbox" name="item5" ng-model="frm.response.item5" id="response" class="rsvp-checkbox-input">
+
+      <div class="input-wrap">
+        <label for="song">What song will get you dancing?</label>
+        <input type="text" name="song" ng-model="frm.song" id="song" class="rsvp-text-input" placeholder="Type your song choice here" required>
+      </div>
+
+      <div class="input-wrap">
+        <label for="little-message">Little message to the bride and groom. . .</label>
+        <input type="textarea" name="little-message" ng-model="frm.littleMessage" id="little-message" class="rsvp-textarea-input">
+      </div>
 
     </div>
 
