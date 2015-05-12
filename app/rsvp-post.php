@@ -225,6 +225,7 @@ if(! empty($errors))
   // if there are errors in our errors array success is false and return the errors
   $data['success'] = false;
   $data['errors'] = $errors;
+  http_response_code(422); // request unable to be followed due to semantic errors
 }else
 {
   // Return a success message to the Browser because there are no errors

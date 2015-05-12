@@ -28,19 +28,13 @@ angular.module('WeddingApp')
       // Going to do ajax submit to post.php validator
       RSVP.post(this.frm)
       .success(function(data, status, headers, config){
-        if(data.errors)
-        {
-          console.log(data.errors);
-        }else
-        {
-          console.log(data);
-        }
+        console.log(data);
         // console.log(status);
         // console.log(data);
         // console.log(headers);
         // console.log(config);
       })
-      .error(function(data,status, headers, config){
+      .error(function(data,status){
         console.log(status);
         console.log(data);
       });
