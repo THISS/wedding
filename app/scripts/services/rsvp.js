@@ -6,7 +6,7 @@ angular.module('WeddingApp').factory('RSVP', ['$http', function RSVPFactory($htt
       return $http({
         method: 'post',
         url: '/rsvp-post.php',
-        data: $.param(form),
+        data: jQuery.param(form),
         headers: {'Content-Type': 'application/x-www-form-urlencoded'} // headers submit as form content-type
       });
 

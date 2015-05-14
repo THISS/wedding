@@ -213,7 +213,9 @@ try
 $emailFile = getcwd().'/email_log.txt';
 try
 {
-  file_put_contents($emailFile, $errors['email']);
+  $emailFileContents = file_get_contents($emailFile);
+  $emailFileContents .= $errors['email'] "\n";
+  file_put_contents($emailFile, $emailFileContents);
 }catch(Exception $e)
 {
   $errors['emailFileSave'] = $e;
