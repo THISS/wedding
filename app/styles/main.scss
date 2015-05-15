@@ -63,16 +63,9 @@ a {
 @import "partials/us";
 
 // details
-.map {
-  height: 31.25em;
-}
-
-#reception-map, #ceremony-map {
-  height: 100%;
-  width: 100%;
-}
+@import "partials/details";
 
 // rsvp
-
+@import "partials/rsvp";
 
 // proposal

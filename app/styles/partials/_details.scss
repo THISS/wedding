@@ -1,0 +1,27 @@
+.details {
+  background-color: $lightGreen;
+  margin: -1.3125em 0 -1.25em; // -21px -20px
+}
+
+// .details-when {
+//   width: 58em;
+//   margin: 0 auto;
+//   aside {
+//     display: inline-block;
+//     width: 18.75em;
+//   }
+//   article {
+//     display: inline-block;
+//     width: 36em;
+//   }
+// }
+
+.map {
+  height: 31.25em;
+  margin: 0 -15px 0 -15px
+}
+
+#reception-map, #ceremony-map {
+  height: 100%;
+  width: 100%;
+}

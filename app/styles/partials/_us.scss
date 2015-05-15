@@ -1,17 +1,17 @@
 // for main
 .the-couple {
   background-color: $lightGreen;
-  margin-top: -16px;
-  article {
-    display: inline-block;
-    width: 49%;
-  }
+  // margin-top: 1em;
+  // article {
+  //   display: inline-block;
+  //   width: 49%;
+  // }
   figure {
-    border: $lightBlue solid 0.5em;
     margin: 1.5em auto 0;
     @include border-radius(15px);
-    width: 370px;
-    height: 370px;
+    width: 24.125em;
+    height: 24.125em;
+    border: $lightBlue solid 0.5em;
   }
   figcaption {
     text-align: center;
@@ -19,10 +19,10 @@
   }
 }
 
-.bio {
-  width: 80%;
-  margin: 0 auto;
-}
+// .bio {
+//   width: 80%;
+//   margin: 0 auto;
+// }
 
 .bio-image {
   background: center center no-repeat;
@@ -40,6 +40,6 @@
   }
 }
 
-.align-right {
-  text-align: right;
-}
+// .align-right {
+//   text-align: right;
+// }
