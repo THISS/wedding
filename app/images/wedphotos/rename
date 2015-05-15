@@ -1,5 +1,6 @@
 #!/bin/bash
 COUNTER=0
+touch photos
 # for i in $(ls ./thumb); do
 #   let COUNTER=COUNTER+1
 #   # mv ./thumb/$i ./thumb/$COUNTER.jpg
@@ -10,12 +11,16 @@ COUNTER=0
 SAVEIFS=$IFS
 IFS=$(echo -en "\n\b")
 # set folder to iterate
-FILES=./large/*
+FOLDER=./large/
+FILES=$FOLDER*
 for f in $FILES
 do
   # echo "$f"
   let COUNTER=COUNTER+1
-  mv $f ./large/$COUNTER.jpg
+  NEWFILE=$COUNTER.jpg
+  mv $f $FOLDER$COUNTER.jpg
+  echo "{url: \"/images/wedphotos/large/$NEWFILE\",categoryId:1,id:$COUNTER,thumbUrl: \"/images/wedphotos/thumb/$NEWFILE\"}," >> photos
+
 done
 # restore $IFS
 IFS=$SAVEIFS
