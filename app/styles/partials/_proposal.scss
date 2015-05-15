@@ -1,0 +1,15 @@
+.proposal-bg {
+  background-color: $lightGreen;
+  margin-top: -1.3125em; //-21px/16px
+}
+.proposal-her>img {
+  margin-top: 2em;
+  width: 100%;
+}
+.proposal-video {
+  margin-bottom: 1em;
+  iframe {
+    height: 500px;
+    width: 100%;
+  }
+}

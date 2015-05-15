@@ -32,16 +32,11 @@ $lightGreen: rgba(159,212,177,1);
 }
 
 // SIZES
-
-html {
-  font-size: 16px;
-}
-
-body {
-//  font-size: 62.5%; /*10px/16px = 62.5%*/
-  width: 100%;
-  // background-color: blue;
-}
+// body {
+// //  font-size: 62.5%; /*10px/16px = 62.5%*/
+//   // width: 100%;
+//   // background-color: blue;
+// }
 
 a {
   text-decoration: none;
@@ -69,3 +64,4 @@ a {
 @import "partials/rsvp";
 
 // proposal
+@import "partials/proposal";
