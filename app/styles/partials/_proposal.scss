@@ -1,6 +1,6 @@
 .proposal-bg {
   background-color: $lightGreen;
-  margin-top: -1.3125em; //-21px/16px
+  // margin-top: -1.3125em; //-21px/16px
 }
 .proposal-her>img {
   margin-top: 2em;
@@ -11,5 +11,13 @@
   iframe {
     height: 500px;
     width: 100%;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .proposal-video {
+    iframe {
+      height: 200px;
+    }
   }
 }

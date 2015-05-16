@@ -50,3 +50,34 @@
     background: $transparentGray url(/images/wedphotos/symbol/plus2.png) center center no-repeat;
   }
 }
+
+.photos-collapse-button {
+  display: none;
+}
+
+// Set this for the couple page
+@media screen and (max-width: $break-big) {
+  [data-page="us"] {
+    .photos-collapse-button {
+      display: inline-block;
+      float: right;
+      margin-top: 1.5em;
+      margin-right: 2em;
+      @include clearfix();
+    }
+    .wed-photo-menu {
+      display: none;
+      &.open {
+        display: block;
+        text-align: left;
+        float: none;
+        clear: both;
+        padding: 1em;
+        >li {
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

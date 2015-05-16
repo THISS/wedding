@@ -1,7 +1,8 @@
 <section class="wed-photos">
     <nav>
       <h2>{{photoset.category.name || "OUR SNAPS"}}</h2>
-      <ul>
+      <button ng-click="toggleMenu()" class="btn btn-info btn-lg photos-collapse-button">&#x2630;</button>
+      <ul class="wed-photo-menu">
         <!-- Make a reset function for the all button -->
         <li ng-click="reset()" ng-class="{'active': isAll()}"><a href="" >ALL</a></li>
         <li

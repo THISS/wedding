@@ -5,6 +5,9 @@ angular.module('WeddingApp').directive('wedPhotos',function(){
   return {
     templateUrl: 'views/wedPhotos.html',
     controller: function($scope){
+      $scope.toggleMenu = function(){
+        jQuery(".wed-photo-menu").toggleClass("open");
+      };
       // We set the photoset object in the controller as this will be our point of reference
       $scope.photoset = {};
       // $scope.photoset.categories = [{name: catName, id: #}];

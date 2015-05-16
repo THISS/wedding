@@ -1,6 +1,6 @@
 .details {
   background-color: $lightGreen;
-  margin: -1.3125em 0 -1.25em; // -21px -20px
+  // margin: -1.3125em 0 -1.25em; // -21px -20px
 }
 
 // .details-when {
@@ -24,4 +24,10 @@
 #reception-map, #ceremony-map {
   height: 100%;
   width: 100%;
+}
+
+@media screen and (max-height: 500px) {
+  .map {
+    height: 15em;
+  }
 }
