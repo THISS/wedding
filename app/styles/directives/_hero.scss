@@ -2,7 +2,7 @@
   width: 100%;
   img{
     width:100%;
-    float:left;
+    // float:left;
   }
 }
 
@@ -11,14 +11,17 @@
   @include padmarfix();
   li{
     display: none;
-    h1{
-      position: absolute;
-      padding: 0.3em;
-      border:$lighterGray solid 3px;
-      color: white;
-      background-color: $transparentGray;
-      font-size: 2em;
-    }
+  }
+  h1{
+    @include padmarfix();
+    position: absolute;
+    padding: 0.3em;
+    border:$lighterGray solid 3px;
+    color: white;
+    background-color: $transparentGray;
+    font-size: 3em;
+    top: 1em;
+    right: 1em;
   }
   .active {
     display:block;
@@ -26,32 +29,53 @@
   @include clearfix();
 }
 
-#hero-couple {
-  top: 10%;
-  left: 15%;
-}
-
-#hero-details {
-top: 10%;
-left: 25%;
-}
-
-#hero-rsvp {
-top: 10%;
-left: 65%;
-}
-
 #hero-proposal {
-  top: 10%;
-  left: 65%;
   background-color: $transparentWhite;
   color: $darkGray;
+}
+
+@media screen and (min-width: $break-large){
+  .hero-container-list {
+    h1 {
+      font-size: 4em;
+      top: 2.5em;
+      right: 2.5em;
+    }
+  }
+  #hero-couple {
+    top: 1em;
+    right: 1em;
+  }
+  #hero-proposal {
+    top: 1em;
+    right: 1em;
+  }
+}
+
+@media screen and (max-width: $break-big){
+  .hero-container-list {
+    h1 {
+      font-size: 2em;
+      top: 1.5em;
+      right: 1.5em;
+    }
+  }
+}
+
+@media screen and (max-width: $break-medium) {
+  .hero-container-list {
+    h1 {
+      font-size: 1.5em;
+      top: 1em;
+      right: 1em;
+    }
+  }
 }
 
 @media screen and (max-width: $break-small){
   .hero-container-list {
     h1 {
-      font-size: 0.125em;
+      font-size: 1em;
     }
   }
 }
