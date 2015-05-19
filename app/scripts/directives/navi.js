@@ -13,6 +13,16 @@ angular.module('WeddingApp').directive('navi',function(){
         jQuery('.navbar-nav').toggleClass("open");
       };
 
+      // Initialise the countdown clock
+      // Wedding date
+      var wedDate = new Date("August 16, 2015 15:00:00")
+      var nowDate = new Date();
+      // Now date
+      $scope.clock = jQuery(".wedding-countdown").FlipClock((wedDate - nowDate)/1000, {
+        clockFace: 'DailyCounter',
+        countdown: true,
+        showSeconds: false
+      });
     }
   };
 });

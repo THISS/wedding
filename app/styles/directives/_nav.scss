@@ -52,6 +52,16 @@ header>div.row {
   display:none;
 }
 
+.wedding-countdown {
+  position: absolute;
+  top: -21em;
+  left: 16em;
+}
+@media screen and (max-width: $break-big) {
+  .wedding-countdown {
+    display: none;
+  }
+}
 @media screen and (max-width: $break-medium) {
   .navbar-collapse-button {
     display: inline-block;
