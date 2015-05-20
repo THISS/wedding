@@ -46,6 +46,11 @@
 .photo-hover {
   height: 100%;
   width: 100%;
+  background:none;
+  background-position-x: center;
+  background-position-y: center;
+  @include transition-property(background);
+  @include transition-duration(.4s);
   &:hover {
     background: $transparentGray url(/images/wedphotos/symbol/plus2.png) center center no-repeat;
   }

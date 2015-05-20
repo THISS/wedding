@@ -8,22 +8,27 @@ main>header {
   // nav {
   //   float: right;
   // }
+  &>.row {
+    padding: 1em;
+  }
 }
-header>div.row {
-  padding:1em;
-}
+
 .header-names {
-  font-size: 1.25em;
   text-align: center;
+  line-height: normal;
+  // padding:1em;
   p {
-    margin: .25em 0;
+    @include padmarfix();
+    font-size: 2em;
+    font-family: $fontScript;
   }
 }
 // Navigation List
 .navbar-nav {
   @include padmarfix();
-  margin-top: 4.5em;
+  margin-top: 5.3em;
   float: right;
+  // padding-bottom: 1em;
   li{
     text-align: right;
     display: inline;
@@ -61,6 +66,9 @@ header>div.row {
   .wedding-countdown {
     display: none;
   }
+  .navbar-nav {
+    margin-top: 0.5em;
+  }
 }
 @media screen and (max-width: $break-medium) {
   .navbar-collapse-button {
@@ -74,7 +82,7 @@ header>div.row {
       li {
         text-align:left;
         display: block;
-        margin: 0 auto;
+        margin: 0;
       }
     }
   }

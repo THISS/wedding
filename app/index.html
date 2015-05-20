@@ -5,8 +5,21 @@
     <title>Brenton &amp; Kim 2015</title>
     <meta name="description" content="I promise to hold you close | I look forward to seeing your beautiful smile every day | I will have a deep perfectly imperfect love for you always">
     <meta name="viewport" content="width=device-width">
-    <script src="//use.typekit.net/ppr5lev.js"></script>
-    <script>try{Typekit.load();}catch(e){}</script>
+    <script type="text/javascript">
+    // Webfont loader for google font Noto Serif
+      WebFontConfig = {
+        google: {families: ['Noto+Serif::latin']}
+      };
+      (function(){
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf,s);
+      })();
+    </script>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
@@ -14,6 +27,7 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/vendor/lightbox.css">
+    <link rel="stylesheet" href="styles/fonts/fontloader.css">
     <link rel="stylesheet" href="styles/vendor/flipclock.css">
     <link rel="stylesheet" href="styles/vendor/bootstrap.css">
     <link rel="stylesheet" href="styles/main.css">
@@ -29,12 +43,12 @@
       <aside hero></aside>
       <header class="container-fluid">
         <div class="row">
-          <aside class="header-names col-md-3"><p>BRENTON HOLSWICH</p><p>&amp;</p><p>KIMBERLY YOUNG<p></aside>
+          <aside class="header-names col-md-3"><p>Brenton Holswich</p><p>&amp;</p><p>Kimberly Young<p></aside>
           <nav navi class="col-xs-12 col-sm-9 col-md-7 pull-right"></nav>
         </div>
       </header>
 
-      <section class="content" ng-view=""></section>
+      <section class="content" ng-view></section>
 
       <footer>
         <div class="footer">
@@ -69,6 +83,7 @@
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/angular/angular.js"></script>
         <script src="bower_components/angular-route/angular-route.js"></script>
+        <script src="bower_components/angular-animate/angular-animate.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 

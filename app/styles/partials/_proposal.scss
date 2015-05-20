@@ -14,6 +14,12 @@
   }
 }
 
+.proposal-stories {
+  h1 {
+    font-family: $fontTitle;
+  }
+}
+
 @media screen and (max-height: 500px) {
   .proposal-video {
     iframe {

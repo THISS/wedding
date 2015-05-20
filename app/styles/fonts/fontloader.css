@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'elsieweddingregular';
+    src: url('/styles/fonts/elsiewedding/elsiewedding-regular-webfont.eot');
+    src: url('/styles/fonts/elsiewedding/elsiewedding-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/styles/fonts/elsiewedding/elsiewedding-regular-webfont.woff2') format('woff2'),
+         url('/styles/fonts/elsiewedding/elsiewedding-regular-webfont.woff') format('woff'),
+         url('/styles/fonts/elsiewedding/elsiewedding-regular-webfont.ttf') format('truetype'),
+         url('/styles/fonts/elsiewedding/elsiewedding-regular-webfont.svg#elsieregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cac_champagneregular';
+    src: url('/styles/fonts/cac-champagne/cac_champagne-webfont.eot');
+    src: url('/styles/fonts/cac-champagne/cac_champagne-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/styles/fonts/cac-champagne/cac_champagne-webfont.woff') format('woff'),
+         url('/styles/fonts/cac-champagne/cac_champagne-webfont.ttf') format('truetype'),
+         url('/styles/fonts/cac-champagne/cac_champagne-webfont.svg#cac_champagneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

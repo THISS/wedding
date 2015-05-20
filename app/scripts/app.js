@@ -10,7 +10,8 @@
  */
 angular
   .module('WeddingApp', [
-    'ngRoute'
+    'ngRoute',
+    'ngAnimate'
   ])
   .config(function ($routeProvider) {
     $routeProvider

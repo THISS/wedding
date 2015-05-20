@@ -21,6 +21,36 @@
   margin: 0 -15px 0 -15px
 }
 
+.details {
+  h1, h2 {
+    font-family: $fontTitle;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+}
+
+.details-clothes-container {
+  // @include clearfix();
+  img {
+    // float: left;
+    // width: 10em;
+    margin-bottom: 1em;
+    position: relative;
+    top: 0;
+    @include transition-property(top);
+    @include transition-duration(.2s);
+  }
+  img:hover {
+    top: -1em;
+  }
+}
+
 #reception-map, #ceremony-map {
   height: 100%;
   width: 100%;
