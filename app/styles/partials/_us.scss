@@ -51,21 +51,6 @@
 //   text-align: right;
 // }
 
-// Animation
-@include keyframes(scale) {
-  0% {
-    @include scale(.5,.5);
-    @include opacity(0);
-  }
-  50% {
-    @include opacity(.2);
-  }
-  100% {
-    @include scale(1,1);
-    @include opacity(1);
-  }
-}
-
 @media screen and (min-width: $break-medium) {
   .content.ng-scope figure{
     @include animation(scale .5s);

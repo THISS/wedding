@@ -43,6 +43,21 @@ $break-medium: 600px;
 $break-big: 1000px;
 $break-large: 1200px;
 
+// ANIMATION
+@include keyframes(scale) {
+  0% {
+    @include scale(.5,.5);
+    @include opacity(0);
+  }
+  50% {
+    @include opacity(.2);
+  }
+  100% {
+    @include scale(1,1);
+    @include opacity(1);
+  }
+}
+
 // body {
 // //  font-size: 62.5%; /*10px/16px = 62.5%*/
 //   // width: 100%;

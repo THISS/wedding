@@ -2,6 +2,9 @@
   background-color: $lightGreen;
   margin-bottom: -1em; //-18px/16px
   padding: 2em 0 2em 0;
+  form {
+    @include animation(scale .5s);
+  }
 }
 
 label {
