@@ -36,7 +36,8 @@ if(!empty($validated))
   }
   else
   {
-    $errors['name'][] = 'Your Name can only contain _, 1-9, A-Z or a-z and be 2-30 characters long.';
+    // $errors['name'][] = 'Your Name can only contain _, 1-9, A-Z or a-z and be 2-30 characters long.';
+    $errors[] = 'Your Name can only contain _, 1-9, A-Z or a-z and be 2-30 characters long.';
   }
 }
 // else
@@ -57,7 +58,8 @@ if(!empty($validated))
     $details['number'] = $number;
   }else
   {
-    $errors['number'][] = "You need to enter a number between 1 and 9";
+    // $errors['number'][] = "You need to enter a number between 1 and 9";
+    $errors[] = "You need to enter a number between 1 and 9";
   }
 }
 // else
@@ -77,7 +79,8 @@ if(!empty($validated))
     $details['groupName'] = $groupName;
   }else
   {
-    $errors['groupName'][] = "Try to have only alphabetical letters in your name. . .";
+    // $errors['groupName'][] = "Try to have only alphabetical letters in your name. . .";
+    $errors[] = "Try to have only alphabetical letters in your name. . .";
   }
 }else
 {
@@ -100,7 +103,8 @@ if(!empty($validated))
       $details['response'] = $validated;
       break;
     default:
-      $errors['response'][] = "How did you give a response not listed?";
+    // $errors['response'][] = "How did you give a response not listed?";
+      $errors[] = "How did you give a response not listed?";
   };
 }
 // else
@@ -120,7 +124,8 @@ if(!empty($validated))
     $details['song'] = $song;
   }else
   {
-    $errors['song'][] = "Your song needs to be between 1 and 40 letters or numbers in length.";
+    // $errors['song'][] = "Your song needs to be between 1 and 40 letters or numbers in length.";
+    $errors[] = "Your song needs to be between 1 and 40 letters or numbers in length.";
   }
 }
 // else
@@ -140,7 +145,8 @@ if(!empty($validated))
     $details['littleMessage'] = $littleMessage;
   }else
   {
-    $errors['littleMessage'][] = "Try to have only alphabetical letters in your message. . .";
+    // $errors['littleMessage'][] = "Try to have only alphabetical letters in your message. . .";
+    $errors[] = "Try to have only alphabetical letters in your message. . .";
   }
 }else
 {
@@ -158,7 +164,8 @@ try
   $current = file_get_contents($file);
 }catch(Exception $e)
 {
-  $errors['fileRead'] = $e;
+  // $errors['fileRead'] = $e;
+  $errors[] = $e;
 }
 // Append a new person to the file
 $newMessage .= "\n";
@@ -179,7 +186,8 @@ try
   file_put_contents($file, $current);
 }catch(Exception $e)
 {
-  $errors['fileSave'] = $e;
+  // $errors['fileSave'] = $e;
+  $errors[] = $e;
 }
 
 /****************************/
@@ -206,7 +214,7 @@ try
 
 }catch(Exception $e)
 {
-  $errors['email'][] = $e;
+  $errors[] = $e;
 }
 
 // Write email errors to a file if they occur
@@ -214,11 +222,12 @@ $emailFile = getcwd().'/email_log.txt';
 try
 {
   $emailFileContents = file_get_contents($emailFile);
-  $emailFileContents .= $errors['email'] "\n";
+  $emailFileContents .= $errors['email'] . "\n";
   file_put_contents($emailFile, $emailFileContents);
 }catch(Exception $e)
 {
-  $errors['emailFileSave'] = $e;
+  $errors[] = $e;
+  // $errors['emailFileSave'] = $e;
 }
 /****************************/
 // Response To Browser

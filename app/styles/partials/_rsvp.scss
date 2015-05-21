@@ -1,7 +1,10 @@
 .rsvp-container {
   background-color: $lightGreen;
-  margin-bottom: -1em; //-18px/16px
-  padding: 2em 0 2em 0;
+  // margin-bottom: -1em; //-18px/16px
+  // padding: 2em 0 2em 0;
+  .alert {
+    margin-top: 1em;
+  }
   form {
     @include animation(scale .5s);
   }

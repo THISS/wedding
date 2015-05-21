@@ -21,15 +21,16 @@
       })();
     </script>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/vendor/lightbox.css">
-    <link rel="stylesheet" href="styles/fonts/fontloader.css">
-    <link rel="stylesheet" href="styles/vendor/flipclock.css">
+
+    <!-- build:css(app) styles/vendorstyle.css -->
     <link rel="stylesheet" href="styles/vendor/bootstrap.css">
+    <link rel="stylesheet" href="styles/vendor/bootstrap-alerts.css">
+    <link rel="stylesheet" href="styles/vendor/lightbox.css">
+    <link rel="stylesheet" href="styles/vendor/flipclock.css">
+    <!-- endbuild -->
+
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/fonts/fontloader.css">
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
@@ -87,10 +88,11 @@
         <!-- endbower -->
         <!-- endbuild -->
 
-        <!-- vendor -->
-        <!-- <script src="scripts/vendor/jquery-1.11.0.min.js"></script> -->
+        <!-- build:js(app) scripts/utilities.js -->
         <script src="scripts/vendor/lightbox.min.js"></script>
         <script src="scripts/vendor/flipclock.js"></script>
+        <!-- endbuild -->
+
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4CfXvZFuoMj4BhVTYfPHy4mvNFqUKwJc"></script>
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->

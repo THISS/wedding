@@ -8,10 +8,13 @@
   // }
   figure {
     margin: 1.5em auto 0;
-    @include border-radius(15px);
-    width: 24.125em;
-    height: 24.125em;
+    @include border-radius(1em);
+    width: 60%;
+    // height: 24.125em;
     border: $lightBlue solid 0.5em;
+    img {
+      width: 100%;
+    }
   }
   figcaption {
     text-align: center;
@@ -32,18 +35,18 @@
 
 .bio-image {
   background: center center no-repeat;
-  margin: 2em;
   &.him {
     background-image: url(/images/us/dino.png);
-    width: 215px;
-    height: 178px;
-    margin-left: 40%;
-    margin-top: -5em;
+    width: 60%;
+    height: 13em;
+    margin-left: 35%;
+    margin-top: -5.6em;
   }
   &.her {
     background-image: url(/images/us/peng.png);
-    width: 238px;
-    height: 196px;
+    width: 60%;
+    height: 15em;
+    margin-top: 1.4em;
   }
 }
 

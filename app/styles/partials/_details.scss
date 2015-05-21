@@ -17,7 +17,7 @@
 // }
 
 .map {
-  height: 31.25em;
+  height: 10em;
   margin: 0 -15px 0 -15px
 }
 
@@ -56,8 +56,8 @@
   width: 100%;
 }
 
-@media screen and (max-height: 500px) {
+@media screen and (min-height: 600px) {
   .map {
-    height: 15em;
+    height: 31.25em;
   }
 }

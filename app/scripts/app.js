@@ -19,8 +19,7 @@ angular
         redirectTo: '/us'
       })
       .when('/us', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        templateUrl: 'views/main.html'
       })
       .when('/details', {
         templateUrl: 'views/details.html',
@@ -31,8 +30,7 @@ angular
         controller: 'RsvpCtrl'
       })
       .when('/proposal',{
-        templateUrl: 'views/proposal.html',
-        controller: 'ProposalCtrl'
+        templateUrl: 'views/proposal.html'
       })
       .otherwise({
         redirectTo: '/us'
